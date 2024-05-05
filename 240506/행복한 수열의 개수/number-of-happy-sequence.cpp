@@ -12,8 +12,11 @@ int Happy(int n, int m){
         for(int j = 0; j < n-1; j++){
             if(arr[i][j] == arr[i][j+1]) count++;
             else count = 1;
+            if(count >= m) {
+                sum++;
+                break;
+            }
         }
-        if(count >= m) sum++;
     }
 
     //열 행복한 개수
@@ -22,8 +25,11 @@ int Happy(int n, int m){
         for(int i = 0; i < n-1; i++){
             if(arr[i][j] == arr[i+1][j]) count++;
             else count = 1;
+            if(count >= m) {
+                sum++;
+                break;
+            }
         }
-        if(count >= m) sum++;
     }
 
     return sum;
