@@ -4,8 +4,8 @@ int main() {
     // 여기에 코드를 작성해주세요.
     int sum = 0;
     int count = 0;
+    int age;
     while(true){
-        int age;
         cin >> age;
         if(age >= 30) break;
         sum += age;
