@@ -6,6 +6,11 @@ int arr[101][101];
 //행복한 수열 개수
 int Happy(int n, int m){
     int sum = 0;
+
+    if(n == 1){
+        if(m == 1) return 2;
+        else return 0;
+    }
     //행 행복한 개수
     for(int i = 0; i < n; i++){
         int count = 1;
