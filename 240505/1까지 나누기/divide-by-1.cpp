@@ -6,10 +6,11 @@ int main() {
     cin >> n;
     int count = 0;
     int i = 1;
-    while(n >= 1){
-        count++;
+    while(true){
         n /= i;
+        count++;
         i++;
+        if(n <= 1) break;
     }
     cout << count;
     return 0;
